@@ -1,0 +1,8 @@
+upper/negative_controls/neg_MUSTFAIL_nodes_swapped.json: tpmahler-areal-upper-v1, 37 polynomials (37 weighted), 7943 nodes on [0.145, 20.0], s = 1.0000010169213929
+moments exact: True; data errors: ['nodes']
+(U1) sum b deg = 0.9465767869 < s = 1.0000010169: True
+(U2) all weighted: True; smallest int log|Q| dmu = 1.6966e-06 (Q_1)
+(V) (1/s) int g dmu = [0.325047160462815 +/- 2.38e-16] (exact rational part -0.231581846523); claim v = 0.325047125119; margin -3.534e-08: False
+(U3) [0.145, 20.0]: 22551 interval tests, coverage exact: False, failures: 0, brackets 256, smallest certified lower bound 6.4107e-10 near 10.226875  [96s]
+NOT VERIFIED
+[103s]

@@ -1,0 +1,12 @@
+polys 36 (active 36), nodes 6342, support [0.1475, 16.0], X = 16, s = 1.00000092, claim v = 0.3250622589
+(U1) sum b deg = 0.938201 < s = 1.000001  OK
+(U2) int log|Q_j| dmu > 0 for all 36 active Q_j; smallest 1.783e-06
+(V) (1/s) int g dmu = [0.3250622578763989607653331827304082977157588503466310 +/- 5.77e-53] <= v  OK
+root windows: 245  (79s)
+chord intervals: 6580
+interval checks: 37536; smallest endpoint lower bound 1.7680e-06
+VERIFIED: log lambda_A+ <= v = 65012451779/200000000000 <= 0.3250622589; lambda_A+ <= e^v <= 1.3841169 (also E_A+)  (203s)
+
+real	3m23.162s
+user	92m7.988s
+sys	0m0.820s

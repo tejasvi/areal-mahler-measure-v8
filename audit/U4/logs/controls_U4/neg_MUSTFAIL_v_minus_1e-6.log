@@ -1,0 +1,8 @@
+upper/negative_controls/neg_MUSTFAIL_v_minus_1e-6.json: tpmahler-areal-upper-v1, 37 polynomials (37 weighted), 7943 nodes on [0.145, 20.0], s = 1.0000010165987883
+moments exact: True; data errors: none
+(U1) sum b deg = 0.9465767869 < s = 1.0000010166: True
+(U2) all weighted: True; smallest int log|Q| dmu = 1.6959e-06 (Q_1)
+(V) (1/s) int g dmu = [0.325047124136959 +/- 4.65e-17] (exact rational part -0.231581846523); claim v = 0.325046125119; margin -9.990e-07: False
+(U3) [0.145, 20.0]: 22548 interval tests, coverage exact: True, failures: 0, brackets 256, smallest certified lower bound 2.1990e-11 near 9.24625  [124s]
+NOT VERIFIED
+[132s]

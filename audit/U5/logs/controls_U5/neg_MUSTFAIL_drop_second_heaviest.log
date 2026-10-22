@@ -1,0 +1,28 @@
+upper/negative_controls/neg_MUSTFAIL_drop_second_heaviest.json: tpmahler-areal-upper-v1, 33 polynomials (32 weighted), 12670 nodes on [0.148125, 20.0], s = 1.000001611608328
+moments exact: True; data errors: none
+(U1) sum b deg = 0.8737775569 < s = 1.0000016116: True
+(U2) all weighted: True; smallest int log|Q| dmu = 2.4522e-06 (Q_3)
+(V) (1/s) int g dmu = [0.324947433578585 +/- 4.85e-16] (exact rational part -0.231405385725); claim v = 0.324947434385; margin 8.064e-10: True
+(U3) [0.148125, 20.0]: 13201 interval tests, coverage exact: True, failures: 1356, brackets 215, smallest certified lower bound -9.2964e-02 near 0.7199190945033055  [206s]
+   FAILED near (0.15807122123798964, 'value [-0.00017807 +/- 1.39e-9] < 0')
+   FAILED near (0.1584375, 'value [-0.0062382 +/- 4.98e-8] < 0')
+   FAILED near (0.1590625, 'value [-0.012482 +/- 4.62e-7] < 0')
+   FAILED near (0.1596875, 'value [-0.012689 +/- 6.36e-8] < 0')
+   FAILED near (0.160625, 'value [-0.012770 +/- 3.25e-7] < 0')
+   FAILED near (0.161875, 'value [-0.012865 +/- 4.04e-7] < 0')
+   FAILED near (0.16375, 'value [-0.013051 +/- 7.42e-8] < 0')
+   FAILED near (0.16625, 'value [-0.013200 +/- 4.17e-8] < 0')
+   FAILED near (0.16863856724795143, 'value [-0.013344 +/- 1.50e-7] < 0')
+   FAILED near (0.1698885672479514, 'value [-0.0084697 +/- 2.17e-9] < 0')
+   FAILED near (0.170625, 'value [-0.013246 +/- 3.56e-7] < 0')
+   FAILED near (0.1715615552454823, 'value [-0.013741 +/- 2.21e-7] < 0')
+   FAILED near (0.1718731104909646, 'bracket of Q_[22]')
+   FAILED near (0.1721865552454823, 'value [-0.013739 +/- 1.96e-7] < 0')
+   FAILED near (0.1728125, 'value [-0.013837 +/- 3.85e-7] < 0')
+   FAILED near (0.1734375, 'value [-0.013721 +/- 2.69e-7] < 0')
+   FAILED near (0.1740625, 'value [-0.0071867 +/- 5.42e-9] < 0')
+   FAILED near (0.17438173984279406, 'value [-5.0789e-5 +/- 2.30e-10] < 0')
+   FAILED near (0.1753125, 'value [-5.1710e-5 +/- 3.90e-10] < 0')
+   FAILED near (0.1759375, 'value [-0.0095267 +/- 1.43e-8] < 0')
+NOT VERIFIED
+[220s]

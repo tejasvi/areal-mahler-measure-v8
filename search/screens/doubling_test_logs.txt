@@ -1,0 +1,24 @@
+== arlup6_R8.log (A58v uniform:16:0.00125, warm from arlup6_R7b_duals.npz; stopped after round 4)
+  warm start: 28223 rows from arlup6_R7b_duals.npz
+A58v: J = 58, 12799 hats on [0, 16.0], LP grid 28223, check grid 183350, delta 3e-06 (1195s)
+     cvxopt: unknown, 60 iterations, gap 3.62e-07, rel gap 1.115381289586716e-06, pinf 3.17e-07, dinf 3.79e-05 (564s)
+  closed-form U vs stable potentials: max |diff| 2.81e-08 on 980 points
+  it 0: value 0.32493823 (Omega 1.3839452), rows 28223, min h(check) -2.31e-02 at 0.73128, 39473 below delta/2 (2354s)
+     cvxopt: unknown, 60 iterations, gap 4.10e-07, rel gap 1.2620425566125547e-06, pinf 3.77e-07, dinf 4.79e-05 (516s)
+  it 1: value 0.32497771 (Omega 1.3839998), rows 33062, min h(check) -2.37e-03 at 1.88762, 5108 below delta/2 (3350s)
+     cvxopt: unknown, 62 iterations, gap 4.75e-07, rel gap 1.4603723127303135e-06, pinf 4.58e-07, dinf 6.26e-05 (744s)
+  it 2: value 0.32497836 (Omega 1.3840007), rows 38170, min h(check) -4.71e-06 at 0.24535, 87 below delta/2 (4585s)
+     cvxopt: unknown, 61 iterations, gap 3.69e-07, rel gap 1.134640753875373e-06, pinf 3.56e-07, dinf 4.86e-05 (457s)
+  it 3: value 0.32497796 (Omega 1.3840001), rows 38179, min h(check) -9.94e-07 at 14.57122, 469 below delta/2 (5427s)
+     cvxopt: unknown, 61 iterations, gap 3.46e-07, rel gap 1.0641581017211286e-06, pinf 3.35e-07, dinf 4.63e-05 (452s)
+  it 4: value 0.32497789 (Omega 1.3840000), rows 38648, min h(check) 7.95e-07 at 14.98878, 69 below delta/2 (6375s)
+     cvxopt: unknown, 62 iterations, gap 3.63e-07, rel gap 1.1162423503828442e-06, pinf 3.52e-07, dinf 4.86e-05 (469s)
+
+== arlup6_R9.log (A58v uniform:24:0.0025, warm from arlup5_R6_duals.npz)
+  warm start: 25700 rows from arlup5_R6_duals.npz
+A58v: J = 58, 9599 hats on [0, 24.0], LP grid 26700, check grid 263450, delta 3e-06 (822s)
+     cvxopt: unknown, 65 iterations, gap 2.43e-07, rel gap 7.475006677256581e-07, pinf 1.77e-07, dinf 2.30e-05 (654s)
+  closed-form U vs stable potentials: max |diff| 4.43e-08 on 1348 points
+  it 0: value 0.32504752 (Omega 1.3840964), rows 26700, min h(check) 1.87e-06 at 0.42660, 0 below delta/2 (2096s)
+RESULT R9: value 0.32504752 Omega 1.3840964; support [0.1475, 21.7075]; sum b deg 0.946579; min int log|Q| dmu 2.22e-06; min h(check) 1.87e-06
+   b: [(0, 0.08648788970747148), (1, 0.07034024618183041), (2, 0.03999548352266038), (3, 0.032673377437504834), (4, 3.103839068825264e-09), (5, 0.0204923776733911), (6, 0.006036850522956164), (7, 2.4439049267984827e-09), (9, 0.00964302139692372), (10, 0.00010076392815313247), (11, 0.006326715479325107), (12, 0.0003115188961135394), (13, 0.005382391638445274), (15, 1.8351764697800186e-09), (16, 1.0048277890555206e-09), (18, 5.8380437840454614e-05), (20, 1.5357384655707438e-08), (21, 9.88102892686415e-09), (22, 0.011262490231169231), (23, 0.003273339179478951), (24, 0.00572864505144727), (25, 0.006075711055255724), (26, 9.430182425259093e-10), (27, 3.8128196553272236e-06), (28, 6.320837240043069e-10), (33, 0.003997265477583127), (34, 3.358484006980951e-10), (35, 7.995265022673108e-10), (39, 0.007182447449103354), (40, 0.0028184592739228004), (41, 8.464134980280473e-09), (43, 0.001163623876871603), (44, 2.5606988266065445e-09), (47, 1.636952606435906e-09), (48, 0.004643237577632429), (49, 0.003708623367981843), (50, 3.263786260321633e-09)]

@@ -1,0 +1,28 @@
+upper/negative_controls/neg_MUSTFAIL_G_x0.5.json: tpmahler-areal-upper-v1, 37 polynomials (37 weighted), 7943 nodes on [0.145, 20.0], s = 0.5000005082993941
+moments exact: True; data errors: none
+(U1) sum b deg = 0.9465767869 < s = 0.5000005083: False
+(U2) all weighted: True; smallest int log|Q| dmu = 8.4793e-07 (Q_1)
+(V) (1/s) int g dmu = [0.325047124136959 +/- 4.65e-17] (exact rational part -0.115790923262); claim v = 0.325047125119; margin 9.820e-10: True
+(U3) [0.145, 20.0]: 8456 interval tests, coverage exact: True, failures: 7662, brackets 256, smallest certified lower bound -1.2747e+00 near 16.245315006327104  [88s]
+   FAILED near (1.291875, 'value [-0.00012614 +/- 3.94e-9] < 0')
+   FAILED near (1.29375, 'value [-0.0010167 +/- 3.15e-8] < 0')
+   FAILED near (1.29625, 'value [-0.0021986 +/- 4.44e-8] < 0')
+   FAILED near (1.29875, 'value [-0.0033743 +/- 4.62e-8] < 0')
+   FAILED near (1.30125, 'value [-0.0045440 +/- 2.23e-8] < 0')
+   FAILED near (1.30375, 'value [-0.0057077 +/- 2.02e-8] < 0')
+   FAILED near (1.30625, 'value [-0.0068656 +/- 6.95e-9] < 0')
+   FAILED near (1.30875, 'value [-0.0080179 +/- 4.18e-8] < 0')
+   FAILED near (1.31125, 'value [-0.0091646 +/- 1.68e-8] < 0')
+   FAILED near (1.31375, 'value [-0.010306 +/- 1.06e-8] < 0')
+   FAILED near (1.31625, 'value [-0.011442 +/- 1.83e-7] < 0')
+   FAILED near (1.31875, 'value [-0.012573 +/- 2.77e-7] < 0')
+   FAILED near (1.32125, 'value [-0.013699 +/- 4.38e-7] < 0')
+   FAILED near (1.32375, 'value [-0.014821 +/- 1.88e-7] < 0')
+   FAILED near (1.32625, 'value [-0.015938 +/- 4.51e-7] < 0')
+   FAILED near (1.32875, 'value [-0.017050 +/- 2.01e-7] < 0')
+   FAILED near (1.33125, 'value [-0.018158 +/- 2.85e-7] < 0')
+   FAILED near (1.33375, 'value [-0.019261 +/- 4.54e-7] < 0')
+   FAILED near (1.33625, 'value [-0.020361 +/- 1.73e-7] < 0')
+   FAILED near (1.33875, 'value [-0.021457 +/- 3.26e-8] < 0')
+NOT VERIFIED
+[95s]

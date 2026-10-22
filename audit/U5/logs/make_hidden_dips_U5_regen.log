@@ -1,0 +1,2 @@
+A_contact: x0 = 3.104375033, mass 1.3008e-07: h_new(centre) = [-2.5258e-8 +/- 1.99e-13] < 0; min over nodes within 0.01, the 4 inserted nodes and 11 grid points of spacing 2e-5: [2.4157e-8 +/- 2.88e-13] at 3.1043770 (> 0); file ../regen_U5/hidden_up_A_contact.json
+B_nearnode: x0 = 1.522501100, mass 1.8445e-07: h_new(centre) = [-2.7451e-8 +/- 3.96e-13] < 0; min over nodes within 0.01, the 4 inserted nodes and 11 grid points of spacing 2e-5: [2.0360e-8 +/- 4.93e-13] at 1.5225016 (> 0); file ../regen_U5/hidden_up_B_nearnode.json

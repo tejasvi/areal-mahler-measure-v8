@@ -1,0 +1,10 @@
+8812 quadrature points, total mass 1.0000000000, support [0.1321, 23.9979]
+  J_rec  log|1 - x y|      = +0.149302   (min |kernel| on the grid 1.3e-07)
+  J_c=1  log|x + y - 1|    = +0.243464   (min |kernel| on the grid 0.0e+00)
+  J_c=2  log|x + y - 2|    = +0.518861   (min |kernel| on the grid 0.0e+00)
+  J_c=3  log|x + y - 3|    = +0.753781   (min |kernel| on the grid 0.0e+00)
+  J_c=4  log|x + y - 4|    = +0.828947   (min |kernel| on the grid 0.0e+00)
+  J_c=5  log|x + y - 5|    = +1.080373   (min |kernel| on the grid 0.0e+00)
+  J_c=6  log|x + y - 6|    = +1.237023   (min |kernel| on the grid 0.0e+00)
+  J_c=7  log|x + y - 7|    = +1.337598   (min |kernel| on the grid 0.0e+00)
+  J_c=8  log|x + y - 8|    = +1.447048   (min |kernel| on the grid 0.0e+00)

@@ -1,0 +1,13 @@
+polys 37 (active 37), nodes 7947, support [0.145, 20.0], X = 20, s = 1.00000114, claim v = 0.3250481251
+(U1) sum b deg = 0.946577 < s = 1.000001  OK
+(U2) int log|Q_j| dmu > 0 for all 37 active Q_j; smallest 1.724e-06
+(V) (1/s) int g dmu = [0.3250471854167375531070697824267848214575945930153889 +/- 7.57e-53] <= v  OK
+root windows: 256  (116s)
+chord intervals: 8197
+interval checks: 56738; smallest endpoint lower bound 2.8940e-08
+  FAILED near x = 2.255001: lower -3.528e-09 at ('158681595526251/70368744177664', '176172/78125')
+NOT VERIFIED (1 failed; 637s)
+
+real	10m37.047s
+user	159m51.280s
+sys	0m0.608s

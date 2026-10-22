@@ -1,0 +1,28 @@
+upper/negative_controls/neg_MUSTFAIL_G_N_nonzero.json: tpmahler-areal-upper-v1, 37 polynomials (37 weighted), 7943 nodes on [0.145, 20.0], s = 1.0000010178487881
+moments exact: False; data errors: ['G']
+(U1) sum b deg = 0.9465767869 < s = 1.0000010178: True
+(U2) all weighted: False; smallest int log|Q| dmu = -4.9402e-04 (Q_35)
+(V) (1/s) int g dmu = [0.325047127475260 +/- 9.26e-17] (exact rational part -0.231581846523); claim v = 0.325047125119; margin -2.356e-09: False
+(U3) [0.145, 20.0]: 15045 interval tests, coverage exact: True, failures: 2457, brackets 256, smallest certified lower bound -3.4769e-05 near 0.45176463778330583  [78s]
+   FAILED near (0.161875, 'value [-3.4874e-5 +/- 6.97e-11] < 0')
+   FAILED near (0.16625, 'value [-3.5213e-5 +/- 4.83e-10] < 0')
+   FAILED near (0.17140483286822344, 'value [-2.6218e-5 +/- 2.30e-10] < 0')
+   FAILED near (0.17875, 'value [-2.6400e-5 +/- 4.59e-10] < 0')
+   FAILED near (0.1833144378151386, 'value [-3.4625e-5 +/- 9.28e-11] < 0')
+   FAILED near (0.1839394378151386, 'value [-1.0230e-5 +/- 4.26e-10] < 0')
+   FAILED near (0.18875, 'value [-2.7364e-5 +/- 3.23e-10] < 0')
+   FAILED near (0.19383379172338616, 'value [-3.5841e-5 +/- 4.21e-10] < 0')
+   FAILED near (0.1969253374049148, 'value [-7.5799e-6 +/- 4.88e-11] < 0')
+   FAILED near (0.19700330338353544, 'bracket of Q_[32]')
+   FAILED near (0.19712099406485561, 'value [-3.2078e-5 +/- 3.77e-10] < 0')
+   FAILED near (0.20109494798087632, 'value [-2.9846e-5 +/- 1.68e-10] < 0')
+   FAILED near (0.20162962683684388, 'value [-2.8397e-5 +/- 4.53e-10] < 0')
+   FAILED near (0.204375, 'value [-2.3443e-5 +/- 1.40e-10] < 0')
+   FAILED near (0.20596269073504794, 'value [-1.1584e-5 +/- 4.44e-10] < 0')
+   FAILED near (0.208125, 'value [-2.2747e-5 +/- 1.33e-10] < 0')
+   FAILED near (0.22125, 'value [-3.1601e-5 +/- 4.08e-10] < 0')
+   FAILED near (0.23360004230028353, 'value [-1.1158e-6 +/- 2.91e-13] < 0')
+   FAILED near (0.23712976849629236, 'value [-2.9212e-5 +/- 2.47e-10] < 0')
+   FAILED near (0.24117257485613033, 'value [-5.3977e-6 +/- 3.81e-11] < 0')
+NOT VERIFIED
+[85s]

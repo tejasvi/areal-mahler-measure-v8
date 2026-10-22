@@ -1,0 +1,3 @@
+polys 34 (active 34), nodes 12670, support [0.148125, 20.0], X = 20, s = 1.00000161, claim v = 0.3249474344
+CheckError: (U1) sum_j b_j deg Q_j < s fails
+NOT VERIFIED

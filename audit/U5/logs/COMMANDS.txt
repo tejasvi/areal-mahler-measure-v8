@@ -1,0 +1,20 @@
+# Commands that produced the logs in this directory. Working directory: a directory containing the U5 certificate release's
+#   upper/cert_arlup_U5_d445679c.json, upper/check_arl_up_a17af685.py and upper/negative_controls/*.json (18), with this
+#   release directory at P=../release_arl_audit_U5 and a scratch directory at G=../regen_U5 (relative paths throughout).
+#   PY = "python3 -I" (Python 3.13.5, python-flint 0.9.0).
+U5=upper/cert_arlup_U5_d445679c.json; L=$P/logs
+$PY $P/check_arl_second.py $U5 24 > $L/check_second_U5.log 2>&1
+( time $PY upper/check_arl_up_a17af685.py $U5 24 ) > $L/first_checker/check_first_U5.log 2>&1
+# (the two runs above ran at the same time)
+for f in upper/negative_controls/*.json; do $PY $P/check_arl_second.py $f 10 > $L/controls_U5/$(basename $f .json).log 2>&1; done
+# (the 18 control runs above ran 4 at a time; their exit statuses are in controls_U5/exit_codes.txt)
+$PY $P/validate_arl.py $U5 300 1 > $L/validate_arl_U5.log 2>&1
+$PY $P/scan_contacts.py $U5 > $L/scan_contacts_U5.log 2>&1
+$PY $P/make_hidden_dips.py $U5 49670 16000 1028 $P/controls/upper_hidden > $L/make_hidden_dips_U5.log 2>&1
+$PY $P/make_hidden_dips.py $U5 49670 16000 1028 $G > $L/make_hidden_dips_U5_regen.log 2>&1
+(cd $P/controls && for f in upper_hidden/*.json; do cmp -s $f ../../regen_U5/$(basename $f) && echo "$f identical" || echo "$f DIFFERS"; done) > $L/regen_cmp.txt
+for f in $P/controls/upper_hidden/*.json; do b=$(basename $f .json)
+  $PY $P/check_arl_second.py $f 24 > $L/controls_U5/own_$b.log 2>&1
+  ( time $PY upper/check_arl_up_a17af685.py $f 24 ) > $L/first_checker/$b.log 2>&1
+done
+# The exit statuses of all runs other than the 18 controls are in exit_codes.txt.

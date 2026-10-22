@@ -1,0 +1,20 @@
+# Commands that produced the logs in this directory. Working directory: a directory containing the U4 certificate release's
+#   upper/cert_arlup_U4_82d31e67.json, upper/check_arl_up_a17af685.py and upper/negative_controls/*.json (18), with this
+#   release directory at P and a scratch directory at G. PY = "python3 -I" (Python 3.13.5, python-flint 0.9.0).
+#   The runs of the 18 controls and of the hidden-dip steps used P=../release_arl_audit_U4 and G=../regen_U4 (relative
+#   paths, as printed in those logs).
+U4=upper/cert_arlup_U4_82d31e67.json; L=$P/logs
+$PY $P/check_arl_second.py $U4 48 > $L/check_second_U4.log 2>&1
+( time $PY upper/check_arl_up_a17af685.py $U4 48 ) > $L/first_checker/check_first_U4.log 2>&1
+for f in upper/negative_controls/*.json; do $PY $P/check_arl_second.py $f 12 > $L/controls_U4/$(basename $f .json).log 2>&1; done
+# (the 18 control runs above ran 4 at a time; their exit statuses are in controls_U4/exit_codes.txt)
+$PY $P/validate_arl.py $U4 300 1 > $L/validate_arl_U4.log 2>&1
+$PY $P/scan_contacts.py $U4 > $L/scan_contacts_U4.log 2>&1
+$PY $P/make_hidden_dips.py $U4 25245 8000 844 $P/controls/upper_hidden > $L/make_hidden_dips_U4.log 2>&1
+$PY $P/make_hidden_dips.py $U4 25245 8000 844 $G > $L/make_hidden_dips_U4_regen.log 2>&1
+(cd $P/controls && for f in upper_hidden/*.json; do cmp -s $f ../../regen_U4/$(basename $f) && echo "$f identical" || echo "$f DIFFERS"; done) > $L/regen_cmp.txt
+for f in $P/controls/upper_hidden/*.json; do b=$(basename $f .json)
+  $PY $P/check_arl_second.py $f 24 > $L/controls_U4/own_$b.log 2>&1
+  ( time $PY upper/check_arl_up_a17af685.py $f 24 ) > $L/first_checker/$b.log 2>&1
+done
+# The exit statuses of all runs other than the 18 controls are in exit_codes.txt.

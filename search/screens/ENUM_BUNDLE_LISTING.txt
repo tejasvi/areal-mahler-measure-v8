@@ -1,0 +1,5 @@
+a91b1057487a61b8ca6492f86548961542a257419a03c9134403a4a35a37aa19  enum_bundle.tgz
+-rw-rw-r-- <user>/<user> 2898042 2026-10-20 22:50 tp_enum_d7_R10_t3.json
+-rw-rw-r-- <user>/<user>   85252 2026-10-21 00:05 tp_enum_d6only_t22.json
+-rw-rw-r-- <user>/<user>  662526 2026-10-21 00:08 tp_enum_d7only_t22.json
+-rw-rw-r-- <user>/<user> 5546657 2026-10-21 04:32 tp_enum_d8only_t22_par.json

@@ -1,0 +1,9 @@
+upper/negative_controls/neg_NARROWDIP.json: tpmahler-areal-upper-v1, 33 polynomials (33 weighted), 12673 nodes on [0.148125, 20.0], s = 1.0000017506763141
+moments exact: True; data errors: none
+(U1) sum b deg = 0.9468286798 < s = 1.0000017507: True
+(U2) all weighted: True; smallest int log|Q| dmu = 1.8059e-06 (Q_1)
+(V) (1/s) int g dmu = [0.324947572718323 +/- 1.47e-16] (exact rational part -0.231405385725); claim v = 0.324948434385; margin 8.617e-07: True
+(U3) [0.148125, 20.0]: 37796 interval tests, coverage exact: True, failures: 1, brackets 216, smallest certified lower bound 1.6226e-10 near 6.713125  [188s]
+   FAILED near (3.763935375, 'value [-5.1999e-9 +/- 1.01e-14] < 0')
+NOT VERIFIED
+[197s]

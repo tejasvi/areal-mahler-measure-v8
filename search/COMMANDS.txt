@@ -1,0 +1,207 @@
+Exact command lines of the search (redacted). The L1 and U2 lines are those of the release/COMMANDS.txt of the frozen
+package of the L1 and U2 certificates; the L3 lines are those recorded in the frozen package of the L3 certificate (its
+NOTE.txt, which writes the interpreter as python, here $PY, and its wrapper scripts); the U3, U4 and U5 lines are those
+recorded in the frozen packages of the U3, U4 and U5 certificates (their NOTE.txt files, which write the interpreter as PY,
+here $PY, and their wrapper scripts).
+Redacted: the name of the server, the working directory and the path of the Python interpreter, and in the U3, U4 and U5
+lines the directory of the BLAS libraries, written <openblas>. The commands are otherwise unchanged. The L1, U2 and L3 runs
+were made on one server, the U3 runs and the U4 run R6 on a second, and the U4 run R6b, the U4 check and the U4 controls,
+the runs R8, R9, R10 and R10b, and the U5 check and the U5 controls on a third; on each, they were run in one working
+directory that held all programs under their import names (NAME.py). The search programs are the files of this directory
+(search/), with their absolute paths replaced by paths relative to the program's own directory; the other files are listed
+below. For the L1, U2 and L3 runs, PY is a Python 3.12.13 interpreter with numpy 2.5.4, scipy 1.18.1 (HiGHS), cvxpy 1.9.3,
+clarabel 0.11.1 and python-flint 0.9.0. For the U3, U4 and U5 runs, the frozen packages of these certificates record Python
+3.12.13 and python-flint 0.9.0 and no other versions; the programs arl_upper5.py, arl_upper6.py and arl_upper7.py, used for
+them, also need cvxopt, whose version they do not record.
+The wrapper shell scripts named below (chain_L3.sh, chain_U2.sh, chain_U3.sh, run_ctrl_L1.sh, run_ctrl_U2.sh, run_dips.sh,
+run_notch.sh, run_ctrl_L3b.sh, run_ctrl_L3.sh) are omitted; each entry says what the script ran.
+Names used below and the files of this release:
+  primal_L1.npy, primal_L1.log                    = lp/primal_L1_56b810dd.npy, lp/primal_L1_7a849ec8.log
+  arldual_L1.log                                  = lp/arldual_L1_727ad8d7.log
+  primal_L1_arldualN_A58.npy, _idx.json           = lp/primal_L1_arldualN_A58_ba0fdb83.npy, lp/primal_L1_arldualN_A58_idx_80c4e31d.json
+  nodes_L3.npy                                    = lp/nodes_L3_5c1e203f.npy
+  primal_L3.npy, primal_L3.log                    = lp/primal_L3_7cd5ed67.npy, lp/primal_L3_865bbf1d.log
+  arldual_L3.log                                  = lp/arldual_L3_e5fbddc1.log
+  primal_L3_arldualN_A58v.npy, _idx.json          = lp/primal_L3_arldualN_A58v_daa030e9.npy, lp/primal_L3_arldualN_A58v_idx_80c4e31d.json
+  export_arllo_L3.log                             = lp/export_arllo_L3_eb30aab1.log
+  arlup_U2.npy, arlup_U2.json, arlup_U2.log       = lp/arlup_U2_288a23da.npy, lp/arlup_U2_aba8a2b7.json, lp/arlup_U2_c594babf.log
+  export_arlup_U2.log                             = lp/export_arlup_U2_88c071a4.log
+  arlup5_R7_duals.npz, arlup5_R7.log              = lp/arlup5_R7_duals_326c92e0.npz, lp/arlup5_R7_f7ce13f4.log
+  arlup6_R7b.npy, arlup6_R7b.json, arlup6_R7b.log = lp/arlup6_R7b_ab948cff.npy, lp/arlup6_R7b_fc664eaa.json, lp/arlup6_R7b_63350544.log
+  arlup6_R7b_duals.npz                            = lp/arlup6_R7b_duals_6cc538ef.npz
+  export_arlup_U3.log                             = lp/export_arlup_U3_43348b6b.log
+  arlup5_R6_duals.npz, arlup5_R6.log              = lp/arlup5_R6_duals_932f6c54.npz, lp/arlup5_R6_07f89592.log
+  arlup6_R6b.npy, arlup6_R6b.json, arlup6_R6b.log = lp/arlup6_R6b_089cab03.npy, lp/arlup6_R6b_98e39ad5.json, lp/arlup6_R6b_892a9386.log
+  arlup6_R6b_duals.npz                            = lp/arlup6_R6b_duals_af4d52d2.npz
+  export_arlup_U4.log                             = lp/export_arlup_U4_c89aa585.log
+  nodes_adapt_R6b_j0.5.npy                        = lp/nodes_adapt_R6b_j0.5_cb2f569f.npy
+  arlup6_R10_duals.npz, arlup6_R10.log            = lp/arlup6_R10_duals_2b88dc17.npz, lp/arlup6_R10_60f3f752.log
+  export_arlup_U5_R10.log                         = lp/export_arlup_U5_R10_12ef6a74.log
+  cert_arlup_U5_R10_failed.json                   = lp/cert_arlup_U5_R10_failed_9273873e.json
+  check_arlup_U5_R10_failed.log                   = lp/check_arlup_U5_R10_failed_41a21637.log
+  arlup7_R10b.npy, arlup7_R10b.json               = lp/arlup7_R10b_b819afc2.npy, lp/arlup7_R10b_a92570ec.json
+  arlup7_R10b.log, arlup7_R10b_duals.npz          = lp/arlup7_R10b_730b7b6f.log, lp/arlup7_R10b_duals_806ff9a5.npz
+  export_arlup_U5.log                             = lp/export_arlup_U5_5bc2e7a6.log
+  cert_arllo_L3.json, cert_arlup_U5.json          = ../certificate/lower/cert_arllo_L3_5295faaa.json, ../certificate/upper/cert_arlup_U5_d445679c.json
+  cert_arlup_U4.json                              = ../lean-weaker-upper/data/cert_arlup_U4_82d31e67.json (the copy in lean-weaker-upper/data/)
+  check_arl_lo.py, check_arl_up.py                = ../checker/lower/check_arl_lo_59a1c54c.py, ../checker/upper/check_arl_up_a17af685.py
+  check_arllo_L3.log, check_arlup_U5.log          = ../logs/lower/check_arllo_L3_5295faaa.log, ../logs/upper/check_arlup_U5_d445679c.log
+  make_neg_arl.py, make_neg2_arl.py, make_dip_arl_lo.py = ../controls/lower/make_neg_arl_cc13d65b.py, make_neg2_arl_f9b01813.py, make_dip_arl_lo_b3fcc5a9.py
+  make_neg_up_arl.py, make_dip_arl_up.py          = ../controls/upper/make_neg_up_arl_12633fe2.py, make_dip_arl_up_be1590a6.py
+  ctrl_L3/, ctrl_U5/                              = ../controls/lower/, ../controls/upper/
+  cert_arllo_L1.json, check_arllo_L1.log, ctrl_L1/: the L1 certificate, its check log and its controls; not in this release
+                                                  (L1 is the first stage of the L3 search: arl_nodes.py uses the L1 dual).
+  cert_arlup_U2.json, check_arlup_U2.log, ctrl_U2/: the U2 certificate, its check log and its controls; not in this
+                                                  release (they are in the releases of versions 1 to 3 of the paper).
+  cert_arlup_U3.json, check_arlup_U3.log, ctrl_U3/: the U3 certificate, its check log and its controls; not in this
+                                                  release (they are in the release of version 4 of the paper).
+  check_arlup_U4.log, ctrl_U4/: the check log and the controls of the U4 certificate; not in this release (they are
+                                                  in the release of version 5 of the paper).
+
+L1 (lower, first stage):
+  OMP_NUM_THREADS=16 nice -n 10 $PY -I arl_primal.py A58 uniform:20:0.01 L1 > primal_L1.log            -> primal_L1.npy
+  TP_NPROC=40 nice -n 10 $PY -I arl_dual.py primal_L1.npy A58 > arldual_L1.log                         -> primal_L1_arldualN_A58.npy, _idx.json
+  nice -n 10 $PY -I export_arl_lo.py primal_L1.npy primal_L1_arldualN_A58.npy A58 3e-6 cert_arllo_L1.json
+  nice -n 10 $PY -I check_arl_lo.py cert_arllo_L1.json 60 > check_arllo_L1.log
+L3 (lower; adaptive nodes from the L1 dual):
+  $PY -I arl_nodes.py A58 primal_L1_arldualN_A58.npy 24 0.01 0.0005 0.004 nodes_L3.npy                 -> nodes_L3.npy
+  OMP_NUM_THREADS=16 $PY -I arl_primal.py A58 nodes_L3.npy L3 > primal_L3.log                          -> primal_L3.npy
+  TP_NPROC=40 $PY -I arl_dual.py primal_L3.npy A58v > arldual_L3.log                                   -> primal_L3_arldualN_A58v.npy, _idx.json
+  chain_L3.sh: export_arl_lo.py primal_L3.npy primal_L3_arldualN_A58v.npy A58v 3e-6 cert_arllo_L3.json > export_arllo_L3.log;
+               check_arl_lo.py cert_arllo_L3.json 48 > check_arllo_L3.log
+U2 (upper):
+  nice -n 10 $PY -I arl_upper.py A58 uniform:16:0.005 0.004 U2 3e-6 2e-5 16 sparse highs-ds > arlup_U2.log   -> arlup_U2.npy, arlup_U2.json
+  chain_U2.sh: export_arl_up.py arlup_U2.npy A58 1e-9 cert_arlup_U2.json > export_arlup_U2.log;
+               check_arl_up.py cert_arlup_U2.json 40 > check_arlup_U2.log
+U3 (upper; hat spacing 0.0025, set A58v; arl_upper4.py, arl_upper5.py and arl_upper6.py are successive versions of
+arl_upper.py, and their headers describe each change; arl_upper5.py and arl_upper6.py solve each LP by cvxopt's dense
+interior-point method, with the server's multithreaded OpenBLAS preloaded; <openblas> = the directory of its threaded
+(pthread) build):
+  R7:  OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=24 LD_PRELOAD=<openblas>/libblas.so.3:<openblas>/liblapack.so.3 \
+         $PY -I arl_upper5.py A58v uniform:16:0.0025 0.004 R7 3e-6 2e-5 16 sparse cvxopt
+       -> arlup5_R7_duals.npz (the LP rows and duals; printed output arlup5_R7.log); 6 cutting-plane rounds to 0.32506118;
+       its LP rows seed R7b; its int log|x - 1| dmu ended at -7.1e-8, so it was not exported
+  R7b: the same environment plus AREAL_INIT_ROWS=arlup5_R7_duals.npz, OPENBLAS_NUM_THREADS=32:
+         $PY -I arl_upper6.py A58v uniform:16:0.0025 0.004 R7b 3e-6 2e-5 16 sparse cvxopt
+       -> arlup6_R7b.npy, arlup6_R7b.json, arlup6_R7b_duals.npz (printed output arlup6_R7b.log); 2 rounds, value 0.32506256;
+       smallest int log|Q_j| dmu 1.78e-6
+  chain_U3.sh: export_arl_up.py arlup6_R7b.npy A58v 1e-9 cert_arlup_U3.json > export_arlup_U3.log;
+               check_arl_up.py cert_arlup_U3.json 48 > check_arlup_U3.log
+U4 (upper; as U3, but with the hats on [0, 20] instead of [0, 16] (nodes uniform:20:0.0025, 7999 hats); the same programs,
+set A58v and <openblas>; the frozen package of U4 records R6 as below, without the interpreter call):
+  R6:  OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=32 LD_PRELOAD=<openblas>/libblas.so.3:<openblas>/liblapack.so.3 \
+         arl_upper5.py A58v uniform:20:0.0025 0.004 R6 3e-6 2e-5 16 sparse cvxopt
+       -> arlup5_R6_duals.npz (the LP rows and duals; printed output arlup5_R6.log); 7 cutting-plane rounds to 0.32504624;
+       its LP rows seed R6b; its int log|x - 1| dmu ended at -2.2e-7, so it was not exported
+  R6b: the same environment plus AREAL_INIT_ROWS=arlup5_R6_duals.npz:
+         $PY -I arl_upper6.py A58v uniform:20:0.0025 0.004 R6b 3e-6 2e-5 16 sparse cvxopt
+       -> arlup6_R6b.npy, arlup6_R6b.json, arlup6_R6b_duals.npz (printed output arlup6_R6b.log); 1 round, value 0.32504745;
+       smallest int log|Q_j| dmu 1.70e-6
+  chain_U3.sh with the arguments arlup6_R6b.npy U4: export_arl_up.py arlup6_R6b.npy A58v 1e-9 cert_arlup_U4.json
+               > export_arlup_U4.log; check_arl_up.py cert_arlup_U4.json 48 > check_arlup_U4.log
+U5 (upper; as U4 (hats on [0, 20], set A58v, <openblas>), but on adaptive nodes computed from the U4 LP solution, and the
+last LP with arl_upper7.py, a further version of arl_upper6.py whose header describes the change; the frozen package of U5
+holds the node file and the program that made it, but not that command line):
+  adapt_nodes_up.py on the R6b solution: every interval of its 1/400 node grid where the density has an edge (one end
+       zero) or a jump |dG| > 0.5 max G is split in 4, its neighbours in 2 -> nodes_adapt_R6b_j0.5.npy (12,734 nodes on
+       [0, 20], smallest spacing 6.25e-4); in this directory, the command
+         $PY -I adapt_nodes_up.py lp/arlup6_R6b_089cab03.npy 0.5 OUT.npy
+       writes the same file byte for byte
+  R10: OMP_NUM_THREADS=1 OPENBLAS_NUM_THREADS=40 LD_PRELOAD=<openblas>/libblas.so.3:<openblas>/liblapack.so.3 \
+         AREAL_INIT_ROWS=arlup6_R6b_duals.npz \
+         $PY -I arl_upper6.py A58v nodes_adapt_R6b_j0.5.npy 0.004 R10 3e-6 2e-5 16 sparse cvxopt
+       -> arlup6_R10_duals.npz (the LP rows and duals; printed output arlup6_R10.log); 8 cutting-plane rounds to 0.32494773.
+       chain_U3.sh with the arguments arlup6_R10.npy U5 exported its solution (not in this release) as cert_arlup_U5.json
+       (here cert_arlup_U5_R10_failed.json; printed output export_arlup_U5_R10.log), and the upper checker rejected it
+       (check_arlup_U5_R10_failed.log): h = U - sum b_j log|Q_j| is -7.0e-7 at the node 713/1600. The adaptive nodes are
+       not on the LP's 2e-5 check grid, and h has its local minima at concave kinks of the density, i.e. at nodes.
+  R10b: the same environment, but OPENBLAS_NUM_THREADS=48 and AREAL_INIT_ROWS=arlup6_R10_duals.npz:
+         $PY -I arl_upper7.py A58v nodes_adapt_R6b_j0.5.npy 0.004 R10b 3e-6 2e-5 16 sparse cvxopt
+       -> arlup7_R10b.npy, arlup7_R10b.json, arlup7_R10b_duals.npz (printed output arlup7_R10b.log); 7 rounds, value
+       0.32494796; smallest int log|Q_j| dmu 1.66e-6. arl_upper7.py adds every node and every node-interval midpoint to
+       the check grid.
+  chain_U3.sh with the arguments arlup7_R10b.npy U5: export_arl_up.py arlup7_R10b.npy A58v 1e-9 cert_arlup_U5.json
+               > export_arlup_U5.log; check_arl_up.py cert_arlup_U5.json 48 > check_arlup_U5.log
+Controls:
+  run_ctrl_L1.sh: make_neg_arl.py + make_neg2_arl.py cert_arllo_L1.json ctrl_L1; check_arl_lo.py neg_*.json 10 (6 in parallel)
+  run_ctrl_U2.sh: make_neg_up_arl.py cert_arlup_U2.json ctrl_U2; make_dip_arl_up.py cert_arlup_U2.json ctrl_U2/neg_NARROWDIP.json;
+                  check_arl_up.py neg_*.json 20 (4 in parallel)
+  run_dips.sh: make_dip_arl_up.py (again, same output) + check_arl_up.py ctrl_U2/neg_NARROWDIP.json 30;
+               make_dip_arl_lo.py cert_arllo_L1.json ctrl_L1/neg_NARROWNOTCH.json 23275/100000 (W = 1e-6, the default when
+               this process started) + check_arl_lo.py ctrl_L1/neg_NARROWNOTCH.json 30
+  run_notch.sh: a second notch run with W = 3e-6; stopped before it ran (it waited on another process), so it produced
+                nothing that is in this release.
+  run_ctrl_L3b.sh: make_neg_arl.py + make_neg2_arl.py cert_arllo_L3.json ctrl_L3; make_dip_arl_lo.py cert_arllo_L3.json
+                   ctrl_L3/neg_NARROWNOTCH.json 6129/25000 1/1000000; check_arl_lo.py neg_m_plus_*.json neg_NARROWNOTCH.json 8
+                   (4 in parallel) and, at the same time, check_arl_lo.py with each other neg_*.json 2 (4 in parallel)
+  run_ctrl_L3.sh: a first version of run_ctrl_L3b.sh that waited for the L3 check; stopped before it ran anything.
+  chain_U3.sh, after the check printed VERIFIED: make_neg_up_arl.py cert_arlup_U3.json ctrl_U3; make_dip_arl_up.py
+               cert_arlup_U3.json ctrl_U3/neg_NARROWDIP.json; check_arl_up.py neg_*.json 20 (4 in parallel)
+  chain_U3.sh with the arguments arlup6_R6b.npy U4, after the check printed VERIFIED: make_neg_up_arl.py
+               cert_arlup_U4.json ctrl_U4; make_dip_arl_up.py cert_arlup_U4.json ctrl_U4/neg_NARROWDIP.json;
+               check_arl_up.py neg_*.json 20 (4 in parallel)
+  chain_U3.sh with the arguments arlup7_R10b.npy U5, after the check printed VERIFIED: make_neg_up_arl.py
+               cert_arlup_U5.json ctrl_U5; make_dip_arl_up.py cert_arlup_U5.json ctrl_U5/neg_NARROWDIP.json;
+               check_arl_up.py neg_*.json 20 (4 in parallel)
+Export reproduction at freeze time: REPRO_EXPORT.txt. Control regeneration: ../controls/REGEN.txt.
+
+Polynomial sets (data/; tpsets.load(NAME) reads data/NAME.json):
+  data/A58.json  = release/A58_9f9223d2.json of the frozen packages: the text (pdftotext) transcription of Flammang's Table 2,
+                   58 rows, whose row 58 is wrong (two stray footer fragments: ..., 1001, -80, 3 instead of the printed
+                   ..., 591, -36, 1). Set A58 is the one used above for the L1 runs, arl_nodes.py, the L3 primal and the
+                   U2 runs; row 58 has weight 0 in the L1 and U2 certificates.
+  data/A58v.json = release/A58v_961553a5.json of the frozen packages: the verified set (image transcription, ../table2/); rows
+                   1-57 as in A58, row 58 as printed. Set A58v is the one used for the L3 dual, the L3 export and the U3,
+                   U4 and U5 runs; row 58 has weight 0 in the L3 dual and in the U3, U4 and U5 LPs, so it is not among the
+                   34 polynomials of the L3 certificate, the 36 of the U3 certificate, the 37 of the U4 certificate or the
+                   33 of the U5 certificate.
+
+Polynomial screens (screens/; informational, not needed for the certificates). The frozen package of the U3 certificate holds
+their programs and logs but not their command lines; its NOTE.txt describes them as follows.
+  screens/arlup4_R1.log      the run R1 of arl_upper4.py: the U2 LP (hat spacing 0.005) with set A58v, value 0.32518976 as
+                             for U2; it also saved the LP duals, which are not in this release.
+  screens/screen_up_R1.log   screens/tp_upscreen.py against the R1 duals (column generation): the 246,207 totally positive
+                             polynomials of degree <= 8 of an enumeration bundle; none has a negative reduced cost. The bundle
+                             is not in this release; screens/ENUM_BUNDLE_LISTING.txt gives its sha256 and its four files (the
+                             owner and group names of the files replaced by <user>).
+  screens/pscreen_up_R1.log  screens/perturb_screen_up.py against the R1 duals: 4,437,022 candidates beyond totally positive
+                             (each bundle polynomial with one non-leading coefficient changed by -2..+2, and all monic
+                             polynomials of degree <= 4 with |coefficients| <= 8); none enters.
+  screens/screen_lo_L3.log   screens/tp_screen_par.py against the L3 primal: every bundle polynomial Q with int log|Q| dnu <= 0
+                             is a row of Flammang's Table 2. tp_screen_par.py imports tpc.py from this directory (its path
+                             entry is its parent directory) and tp_dual_fixedN_par.py, which is not in this release (it is
+                             in the release of the lower-bound companion paper).
+
+Resultant pilot (screens/; informational, not needed for the certificates). The frozen package of the U4 certificate holds
+the program and its output but not its command line; its NOTE.txt describes it as follows.
+  screens/resultant_pilot_L3.out
+                             screens/resultant_pilot.py on the L3 primal measure: the double integrals of log|1 - x y| and
+                             log|x + y - c| (c = 1..8), which would enter as constraints through Res(P, x^n P(1/x)) != 0 for
+                             non-reciprocal P and Res(P(x), P(c - x)) != 0, are all positive (+0.149 and +0.24 to +1.45), so
+                             these constraints cannot raise the lower bound. Run in this directory with M = 2 Gauss points per
+                             node interval, $PY -I screens/resultant_pilot.py lp/primal_L3_7cd5ed67.npy 2 prints the same
+                             lines (with the default M = 4 the values change by at most 0.015 and stay positive).
+
+Hat-spacing and window tests (screens/; informational, not needed for the certificates). The frozen package of the U5
+certificate holds the logs of the runs R8 and R9 of arl_upper6.py, in one file, but not their command lines; the headers in
+that file and the package's NOTE.txt describe them as follows.
+  screens/doubling_test_logs.txt
+                             R8: set A58v, uniform hats on [0, 16] with the spacing 0.00125, warm-started from the R7b rows,
+                             stopped after round 4 at the LP value 0.32497789 (69 check points below delta/2). The NOTE.txt
+                             lists the LP values on [0, 16] for the spacings 0.01, 0.005, 0.0025 and 0.00125 as 0.32536269,
+                             0.32518976, 0.32506256 and 0.3249779: each halving of the spacing gained less (1.73e-4, 1.27e-4,
+                             0.85e-4). R9: hats on [0, 24] with the spacing 0.0025, warm-started from the R6 rows: 0.32504752,
+                             no gain over [0, 20] (R6b: 0.32504745).
+
+Reproducing the certificates from lp/ (run in this directory; each output is byte-identical to its certificate; the first
+line makes the L1 certificate of the first stage, sha256 4c5758a01151acbd31d0193517137a230b152539e43ce1337c869eb1f5c150ef,
+the second the U2 certificate, sha256 cb2c7960028f60e3bcce2c9f76f08cadfe00eaa131fda60b6b18ffe7591080a3, and the fourth
+the U3 certificate, sha256 40f09d6b99d62dde018ec784c753c9ed82ff579fdd1441b3db427eba456936cc, none of which is in this
+release, and the fifth the U4 certificate, sha256 82d31e67f761ef0f0eb53751d379433caacde57578460c4a7b270f85b0429309, a
+copy of which is in ../lean-weaker-upper/data/):
+  $PY -I export_arl_lo.py lp/primal_L1_56b810dd.npy lp/primal_L1_arldualN_A58_ba0fdb83.npy A58 3e-6 cert_arllo_L1.json
+  $PY -I export_arl_up.py lp/arlup_U2_288a23da.npy A58 1e-9 cert_arlup_U2.json
+  $PY -I export_arl_lo.py lp/primal_L3_7cd5ed67.npy lp/primal_L3_arldualN_A58v_daa030e9.npy A58v 3e-6 cert_arllo_L3.json
+  $PY -I export_arl_up.py lp/arlup6_R7b_ab948cff.npy A58v 1e-9 cert_arlup_U3.json
+  $PY -I export_arl_up.py lp/arlup6_R6b_089cab03.npy A58v 1e-9 cert_arlup_U4.json
+  $PY -I export_arl_up.py lp/arlup7_R10b_b819afc2.npy A58v 1e-9 cert_arlup_U5.json

@@ -1,0 +1,21 @@
+  warm start: 25700 rows from arlup6_R6b_duals.npz
+A58v: J = 58, 12732 hats on [0, 20.0], LP grid 25700, check grid 223450, delta 3e-06 (862s)
+     cvxopt: unknown, 58 iterations, gap 3.20e-07, rel gap 9.850657460079788e-07, pinf 3.42e-07, dinf 3.95e-05 (620s)
+  closed-form U vs stable potentials: max |diff| 5.69e-07 on 1221 points
+  it 0: value 0.32489858 (Omega 1.3838903), rows 25700, min h(check) -3.02e-02 at 0.54813, 18996 below delta/2 (2308s)
+     cvxopt: unknown, 54 iterations, gap 3.05e-07, rel gap 9.372973019410733e-07, pinf 3.34e-07, dinf 3.88e-05 (334s)
+  it 1: value 0.32494470 (Omega 1.3839541), rows 27369, min h(check) -1.09e-02 at 0.55121, 6575 below delta/2 (3319s)
+     cvxopt: unknown, 54 iterations, gap 3.40e-07, rel gap 1.0465558514718813e-06, pinf 3.74e-07, dinf 4.39e-05 (345s)
+  it 2: value 0.32494744 (Omega 1.3839579), rows 28019, min h(check) -1.26e-03 at 3.84871, 1163 below delta/2 (4331s)
+     cvxopt: unknown, 54 iterations, gap 3.56e-07, rel gap 1.0953483400858099e-06, pinf 3.92e-07, dinf 4.61e-05 (339s)
+  it 3: value 0.32494765 (Omega 1.3839582), rows 28174, min h(check) -6.22e-05 at 0.54841, 179 below delta/2 (5127s)
+     cvxopt: unknown, 54 iterations, gap 3.28e-07, rel gap 1.0092487753266674e-06, pinf 3.60e-07, dinf 4.24e-05 (332s)
+  it 4: value 0.32494759 (Omega 1.3839581), rows 28214, min h(check) -2.10e-05 at 17.46749, 134 below delta/2 (5901s)
+     cvxopt: unknown, 53 iterations, gap 3.41e-07, rel gap 1.0493272244565109e-06, pinf 3.76e-07, dinf 4.43e-05 (326s)
+  it 5: value 0.32494767 (Omega 1.3839582), rows 28231, min h(check) -1.81e-07 at 12.48115, 41 below delta/2 (6675s)
+     cvxopt: unknown, 53 iterations, gap 4.77e-07, rel gap 1.466637963074645e-06, pinf 5.24e-07, dinf 6.18e-05 (334s)
+  it 6: value 0.32494802 (Omega 1.3839587), rows 28237, min h(check) 1.13e-06 at 3.30387, 88 below delta/2 (7449s)
+     cvxopt: unknown, 53 iterations, gap 3.71e-07, rel gap 1.1428286380050987e-06, pinf 4.09e-07, dinf 4.82e-05 (327s)
+  it 7: value 0.32494773 (Omega 1.3839583), rows 28245, min h(check) 1.62e-06 at 0.59291, 0 below delta/2 (8204s)
+RESULT R10: value 0.32494773 Omega 1.3839583; support [0.1481, 19.9994]; sum b deg 0.946890; min int log|Q| dmu 1.69e-06; min h(check) 1.62e-06
+   b: [(0, 0.08245157663475673), (1, 0.07301727025596197), (2, 0.037822689622595385), (3, 0.031274448784730735), (4, 3.5300427372076506e-09), (5, 0.018638007222343857), (6, 0.007507649296160802), (7, 6.9089629622802256e-09), (9, 0.008065842757578682), (10, 4.0976882347253025e-06), (11, 0.005566559802044771), (12, 0.00022439050907181675), (13, 0.005700256626923794), (15, 4.280534064458609e-10), (16, 4.0752026505060603e-10), (18, 1.609415436108164e-09), (20, 0.003772818320581879), (21, 9.985828260905545e-06), (22, 0.010942038642957404), (23, 0.002665065805553252), (24, 0.007114486680919227), (25, 0.0051947703514567695), (26, 2.514876256400259e-09), (27, 3.6014005177988565e-10), (33, 0.003375562093937915), (35, 2.80470922487289e-10), (39, 0.008017222736583706), (40, 0.0027032263558833297), (41, 3.5330145919100952e-09), (43, 0.0006870917386654499), (48, 0.0052726661089889095), (49, 0.0029734880689920285), (50, 4.215554626958664e-09)]

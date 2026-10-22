@@ -1,0 +1,78 @@
+name = "LeanAreal"
+version = "0.1.0"
+keywords = ["math"]
+defaultTargets = ["Areal"]
+
+[leanOptions]
+pp.unicode.fun = true
+relaxedAutoImplicit = false
+autoImplicit = false
+weak.linter.style.header = false
+
+# Toolchain leanprover/lean4:v4.35.0-rc3; Mathlib at tag v4.35.0-rc3 (commit c55e6e786f49, see lake-manifest.json).
+[[require]]
+name = "mathlib"
+scope = "leanprover-community"
+rev = "v4.35.0-rc3"
+
+# Shared library files.
+[[lean_lib]]
+name = "AuxCommon"
+globs = ["AuxCommon.+"]
+
+# Areal: statements, reduction, soundness.
+[[lean_lib]]
+name = "Areal"
+roots = ["Areal"]
+globs = ["Areal.+"]
+
+# Core-only computational parts (AuxCore; no Mathlib), precompiled for native_decide.
+[[lean_lib]]
+name = "AuxCore"
+precompileModules = true
+
+# Areal checker (core Lean only; fork of TPCore), precompiled.
+[[lean_lib]]
+name = "ArealCore"
+precompileModules = true
+
+[[lean_exe]]
+name = "arlrun"
+root = "Bench.ArlRun"
+
+# Areal lower-bound computational shards, native track (native_decide).
+[[lean_lib]]
+name = "ArealN"
+globs = ["ArealN.+"]
+
+[[lean_exe]]
+name = "arlk"
+root = "Bench.ArlK"
+
+# Areal lower-bound computational shards, kernel track (decide +kernel; core Lean only).
+[[lean_lib]]
+name = "ArealK"
+globs = ["ArealK.+"]
+
+# Areal upper checker (core Lean only; fork of ArealCore without the main term), precompiled.
+[[lean_lib]]
+name = "ArealUCore"
+precompileModules = true
+
+[[lean_exe]]
+name = "arlurun"
+root = "Bench.ArluRun"
+
+# Areal upper-bound computational shards, native track (native_decide).
+[[lean_lib]]
+name = "ArealUN"
+globs = ["ArealUN.+"]
+
+[[lean_exe]]
+name = "arluk"
+root = "Bench.ArluK"
+
+# Areal upper-bound computational shards, kernel track (decide +kernel; core Lean only).
+[[lean_lib]]
+name = "ArealUK"
+globs = ["ArealUK.+"]

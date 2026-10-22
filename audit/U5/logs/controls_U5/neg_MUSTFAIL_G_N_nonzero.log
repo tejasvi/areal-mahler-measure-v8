@@ -1,0 +1,28 @@
+upper/negative_controls/neg_MUSTFAIL_G_N_nonzero.json: tpmahler-areal-upper-v1, 33 polynomials (33 weighted), 12670 nodes on [0.148125, 20.0], s = 1.000001611920828
+moments exact: False; data errors: ['G']
+(U1) sum b deg = 0.9468286798 < s = 1.0000016119: True
+(U2) all weighted: False; smallest int log|Q| dmu = -4.8910e-04 (Q_31)
+(V) (1/s) int g dmu = [0.324947434413201 +/- 1.47e-16] (exact rational part -0.231405385725); claim v = 0.324947434385; margin -2.820e-11: False
+(U3) [0.148125, 20.0]: 20330 interval tests, coverage exact: True, failures: 2939, brackets 216, smallest certified lower bound -3.4387e-05 near 0.43734949876467655  [251s]
+   FAILED near (0.15921875, 'value [-2.5845e-5 +/- 1.02e-10] < 0')
+   FAILED near (0.1596875, 'value [-1.8960e-5 +/- 4.92e-10] < 0')
+   FAILED near (0.160625, 'value [-1.8673e-5 +/- 2.49e-10] < 0')
+   FAILED near (0.161875, 'value [-4.0723e-6 +/- 4.85e-11] < 0')
+   FAILED near (0.16375, 'value [-2.6936e-5 +/- 7.39e-11] < 0')
+   FAILED near (0.1653125, 'value [-8.8306e-6 +/- 2.75e-11] < 0')
+   FAILED near (0.16806928362397572, 'value [-2.7985e-5 +/- 3.24e-12] < 0')
+   FAILED near (0.1715615552454823, 'value [-3.1028e-5 +/- 1.53e-10] < 0')
+   FAILED near (0.1718731104909646, 'bracket of Q_[22]')
+   FAILED near (0.17202983286822343, 'value [-4.7695e-6 +/- 1.03e-11] < 0')
+   FAILED near (0.1728125, 'value [-1.7238e-5 +/- 2.55e-10] < 0')
+   FAILED near (0.17328125, 'value [-2.2382e-5 +/- 1.69e-10] < 0')
+   FAILED near (0.1765625, 'value [-1.8282e-5 +/- 1.73e-10] < 0')
+   FAILED near (0.17734375, 'value [-3.4088e-6 +/- 1.15e-13] < 0')
+   FAILED near (0.1778125, 'value [-3.6287e-5 +/- 4.59e-10] < 0')
+   FAILED near (0.1784375, 'value [-2.8676e-5 +/- 1.37e-10] < 0')
+   FAILED near (0.1790625, 'value [-3.5040e-5 +/- 2.11e-10] < 0')
+   FAILED near (0.1796875, 'value [-3.3884e-5 +/- 2.74e-10] < 0')
+   FAILED near (0.180625, 'value [-3.5062e-5 +/- 1.33e-10] < 0')
+   FAILED near (0.181875, 'value [-3.5013e-5 +/- 7.42e-11] < 0')
+NOT VERIFIED
+[261s]

@@ -1,0 +1,15 @@
+import ArealUCore.Lits
+import ArealUCore.Leaves
+
+/-! Shard 5806 of the areal U4b tiling (K): leaves 11612 .. 11613. Generated inline (tools/gen_arlu_kshards). -/
+
+set_option maxRecDepth 200000
+set_option maxHeartbeats 0
+
+namespace ArealUCore.ArealUK
+
+theorem chunk_5806 :
+    leavesOK ctxLitU 208850000000 1 ((leaves.drop 11612).take 2) 208900000000 1 = true := by
+  decide +kernel
+
+end ArealUCore.ArealUK

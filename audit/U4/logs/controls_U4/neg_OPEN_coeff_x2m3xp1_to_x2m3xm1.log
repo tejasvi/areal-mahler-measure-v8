@@ -1,0 +1,28 @@
+upper/negative_controls/neg_OPEN_coeff_x2m3xp1_to_x2m3xm1.json: tpmahler-areal-upper-v1, 37 polynomials (37 weighted), 7943 nodes on [0.145, 20.0], s = 1.0000010165987883
+moments exact: True; data errors: none
+(U1) sum b deg = 0.9465767869 < s = 1.0000010166: True
+(U2) all weighted: True; smallest int log|Q| dmu = 1.6959e-06 (Q_1)
+(V) (1/s) int g dmu = [0.325047124136959 +/- 4.65e-17] (exact rational part -0.231581846523); claim v = 0.325047125119; margin 9.820e-10: True
+(U3) [0.145, 20.0]: 8561 interval tests, coverage exact: True, failures: 956, brackets 255, smallest certified lower bound -1.0428e-01 near 0.4206032911489993  [71s]
+   FAILED near (0.156875, 'value [-0.0027673 +/- 3.64e-8] < 0')
+   FAILED near (0.15775872123798962, 'value [-0.0093715 +/- 2.09e-8] < 0')
+   FAILED near (0.15801744247597926, 'bracket of Q_[30]')
+   FAILED near (0.15900872123798962, 'value [-0.021137 +/- 3.79e-7] < 0')
+   FAILED near (0.16125, 'value [-0.032129 +/- 4.07e-7] < 0')
+   FAILED near (0.16375, 'value [-0.032818 +/- 1.07e-7] < 0')
+   FAILED near (0.16625, 'value [-0.033423 +/- 2.38e-7] < 0')
+   FAILED near (0.16863856724795143, 'value [-0.033294 +/- 1.58e-7] < 0')
+   FAILED near (0.1698885672479514, 'value [-0.027970 +/- 7.26e-8] < 0')
+   FAILED near (0.1709365552454823, 'value [-0.034259 +/- 1.63e-7] < 0')
+   FAILED near (0.1718731104909646, 'bracket of Q_[22]')
+   FAILED near (0.1721865552454823, 'value [-0.033692 +/- 4.46e-7] < 0')
+   FAILED near (0.17365317496941007, 'value [-0.025630 +/- 1.55e-8] < 0')
+   FAILED near (0.17490317496941007, 'value [-0.0055245 +/- 1.79e-8] < 0')
+   FAILED near (0.17625, 'value [-0.027231 +/- 2.28e-7] < 0')
+   FAILED near (0.17875, 'value [-0.036261 +/- 1.42e-8] < 0')
+   FAILED near (0.18125, 'value [-0.036488 +/- 2.28e-7] < 0')
+   FAILED near (0.18304295854342573, 'value [-0.037211 +/- 2.32e-7] < 0')
+   FAILED near (0.18358591708685146, 'bracket of Q_[15]')
+   FAILED near (0.18429295854342573, 'value [-0.037258 +/- 2.21e-7] < 0')
+NOT VERIFIED
+[86s]

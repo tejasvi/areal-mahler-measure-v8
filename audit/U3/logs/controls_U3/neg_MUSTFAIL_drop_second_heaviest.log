@@ -1,0 +1,28 @@
+upper/negative_controls/neg_MUSTFAIL_drop_second_heaviest.json: tpmahler-areal-upper-v1, 36 polynomials (35 weighted), 6342 nodes on [0.1475, 16.0], s = 1.0000009209765768
+moments exact: True; data errors: none
+(U1) sum b deg = 0.8657607192 < s = 1.0000009210: True
+(U2) all weighted: True; smallest int log|Q| dmu = 2.2499e-06 (Q_3)
+(V) (1/s) int g dmu = [0.325062257876399 +/- 3.93e-17] (exact rational part -0.231347345385); claim v = 0.325062258895; margin 1.019e-09: True
+(U3) [0.1475, 16.0]: 6884 interval tests, coverage exact: True, failures: 786, brackets 244, smallest certified lower bound -9.6409e-02 near 0.7373051320923768  [42s]
+   FAILED near (0.15900872123798962, 'value [-0.0014253 +/- 3.35e-8] < 0')
+   FAILED near (0.16125, 'value [-0.012597 +/- 7.26e-8] < 0')
+   FAILED near (0.16375, 'value [-0.012851 +/- 2.71e-7] < 0')
+   FAILED near (0.16625, 'value [-0.013167 +/- 1.02e-7] < 0')
+   FAILED near (0.16863856724795143, 'value [-0.012714 +/- 4.25e-7] < 0')
+   FAILED near (0.1698885672479514, 'value [-0.0074326 +/- 1.51e-8] < 0')
+   FAILED near (0.1709365552454823, 'value [-0.013359 +/- 1.42e-7] < 0')
+   FAILED near (0.1718731104909646, 'bracket of Q_[22]')
+   FAILED near (0.1721865552454823, 'value [-0.012622 +/- 4.60e-7] < 0')
+   FAILED near (0.17365317496941007, 'value [-0.0043037 +/- 4.81e-8] < 0')
+   FAILED near (0.17625, 'value [-0.0055158 +/- 1.55e-8] < 0')
+   FAILED near (0.17875, 'value [-0.014253 +/- 3.66e-7] < 0')
+   FAILED near (0.18125, 'value [-0.014116 +/- 4.22e-7] < 0')
+   FAILED near (0.18304295854342573, 'value [-0.014582 +/- 8.87e-8] < 0')
+   FAILED near (0.18358591708685146, 'bracket of Q_[15]')
+   FAILED near (0.18429295854342573, 'value [-0.014447 +/- 6.50e-8] < 0')
+   FAILED near (0.18530645855371686, 'value [-0.0098928 +/- 4.32e-8] < 0')
+   FAILED near (0.18573242364824097, 'value [-0.0062140 +/- 3.52e-8] < 0')
+   FAILED near (0.18585193018904825, 'bracket of Q_[24]')
+   FAILED near (0.1866759650945241, 'value [-0.013315 +/- 1.08e-7] < 0')
+NOT VERIFIED
+[47s]

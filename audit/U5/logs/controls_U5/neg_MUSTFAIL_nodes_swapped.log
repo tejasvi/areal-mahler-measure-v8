@@ -1,0 +1,28 @@
+upper/negative_controls/neg_MUSTFAIL_nodes_swapped.json: tpmahler-areal-upper-v1, 33 polynomials (33 weighted), 12670 nodes on [0.148125, 20.0], s = 0.9999986556923856
+moments exact: True; data errors: ['nodes']
+(U1) sum b deg = 0.9468286798 < s = 0.9999986557: True
+(U2) all weighted: False; smallest int log|Q| dmu = -7.7919e-05 (Q_30)
+(V) (1/s) int g dmu = [0.324984567662980 +/- 8.54e-18] (exact rational part -0.231405385725); claim v = 0.324947434385; margin -3.713e-05: False
+(U3) [0.148125, 20.0]: 28596 interval tests, coverage exact: False, failures: 1137, brackets 216, smallest certified lower bound -4.4086e-06 near 3.78467459173206  [209s]
+   FAILED near (0.159296875, 'value [-3.1383e-6 +/- 1.50e-11] < 0')
+   FAILED near (0.15953125, 'value [-3.2884e-6 +/- 4.66e-11] < 0')
+   FAILED near (0.1609375, 'value [-3.3308e-6 +/- 3.46e-12] < 0')
+   FAILED near (0.164375, 'value [-2.9504e-6 +/- 1.59e-11] < 0')
+   FAILED near (0.16821160452996964, 'value [-4.7819e-6 +/- 2.06e-11] < 0')
+   FAILED near (0.17171733286822344, 'value [-3.7197e-6 +/- 4.47e-11] < 0')
+   FAILED near (0.17296875, 'value [-4.1793e-6 +/- 1.75e-12] < 0')
+   FAILED near (0.173203125, 'value [-2.6757e-6 +/- 2.29e-11] < 0')
+   FAILED near (0.176640625, 'value [-4.3417e-6 +/- 3.83e-11] < 0')
+   FAILED near (0.1778125, 'value [-4.2693e-6 +/- 2.92e-11] < 0')
+   FAILED near (0.178671875, 'value [-4.0893e-7 +/- 6.75e-13] < 0')
+   FAILED near (0.1790625, 'value [-3.0255e-6 +/- 4.90e-11] < 0')
+   FAILED near (0.1796875, 'value [-1.8712e-6 +/- 2.70e-11] < 0')
+   FAILED near (0.180625, 'value [-3.0517e-6 +/- 4.28e-11] < 0')
+   FAILED near (0.181875, 'value [-3.0059e-6 +/- 2.26e-11] < 0')
+   FAILED near (0.182578125, 'value [-4.3601e-7 +/- 2.32e-12] < 0')
+   FAILED near (0.18335545854342572, 'value [-3.0743e-6 +/- 2.39e-11] < 0')
+   FAILED near (0.184765625, 'value [-1.5282e-6 +/- 3.99e-11] < 0')
+   FAILED near (0.18703125, 'value [-4.1594e-6 +/- 2.27e-11] < 0')
+   FAILED near (0.1890625, 'value [-3.3938e-6 +/- 9.63e-12] < 0')
+NOT VERIFIED
+[219s]

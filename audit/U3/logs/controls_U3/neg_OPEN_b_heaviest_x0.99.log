@@ -1,0 +1,28 @@
+upper/negative_controls/neg_OPEN_b_heaviest_x0.99.json: tpmahler-areal-upper-v1, 36 polynomials (36 weighted), 6342 nodes on [0.1475, 16.0], s = 1.0000009209765768
+moments exact: True; data errors: none
+(U1) sum b deg = 0.9372807664 < s = 1.0000009210: True
+(U2) all weighted: True; smallest int log|Q| dmu = 1.7827e-06 (Q_1)
+(V) (1/s) int g dmu = [0.325062257876399 +/- 3.93e-17] (exact rational part -0.231347345385); claim v = 0.325062258895; margin 1.019e-09: True
+(U3) [0.1475, 16.0]: 7558 interval tests, coverage exact: True, failures: 227, brackets 245, smallest certified lower bound -1.4908e-03 near 0.19700330338353544  [77s]
+   FAILED near (0.16125, 'value [-0.0015382 +/- 3.20e-8] < 0')
+   FAILED near (0.16375, 'value [-0.0015620 +/- 3.05e-8] < 0')
+   FAILED near (0.16625, 'value [-0.0016470 +/- 2.98e-8] < 0')
+   FAILED near (0.16863856724795143, 'value [-0.00097334 +/- 1.35e-9] < 0')
+   FAILED near (0.1709365552454823, 'value [-0.0014051 +/- 1.06e-8] < 0')
+   FAILED near (0.1718731104909646, 'bracket of Q_[22]')
+   FAILED near (0.1721865552454823, 'value [-0.00055148 +/- 1.23e-9] < 0')
+   FAILED near (0.17875, 'value [-0.0015722 +/- 4.00e-8] < 0')
+   FAILED near (0.18125, 'value [-0.0012008 +/- 1.72e-8] < 0')
+   FAILED near (0.18304295854342573, 'value [-0.0014993 +/- 1.65e-8] < 0')
+   FAILED near (0.18429295854342573, 'value [-0.0012471 +/- 2.12e-8] < 0')
+   FAILED near (0.18708798254726206, 'value [-0.00053503 +/- 1.71e-10] < 0')
+   FAILED near (0.18875, 'value [-0.0015205 +/- 3.41e-9] < 0')
+   FAILED near (0.19406703337870893, 'value [-0.0012778 +/- 1.75e-8] < 0')
+   FAILED near (0.19566136675990467, 'value [-9.4246e-5 +/- 5.48e-11] < 0')
+   FAILED near (0.19575584772560536, 'bracket of Q_[14]')
+   FAILED near (0.1963795755545704, 'value [-0.0010427 +/- 3.98e-9] < 0')
+   FAILED near (0.19700330338353544, 'bracket of Q_[31]')
+   FAILED near (0.19712099406485561, 'value [-0.0014753 +/- 8.24e-9] < 0')
+   FAILED near (0.1972386847461758, 'bracket of Q_[13]')
+NOT VERIFIED
+[89s]

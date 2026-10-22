@@ -1,0 +1,8 @@
+upper/cert_arlup_U5_d445679c.json: tpmahler-areal-upper-v1, 33 polynomials (33 weighted), 12670 nodes on [0.148125, 20.0], s = 1.000001611608328
+moments exact: True; data errors: none
+(U1) sum b deg = 0.9468286798 < s = 1.0000016116: True
+(U2) all weighted: True; smallest int log|Q| dmu = 1.6645e-06 (Q_1)
+(V) (1/s) int g dmu = [0.324947433578585 +/- 4.85e-16] (exact rational part -0.231405385725); claim v = 0.324947434385; margin 8.064e-10: True
+(U3) [0.148125, 20.0]: 36203 interval tests, coverage exact: True, failures: 0, brackets 216, smallest certified lower bound 2.9166e-10 near 2.12359375  [85s]
+VERIFIED: log lambda_A+ <= v = 64989486877/200000000000; lambda_A+ <= e^v = [1.38395789547077 +/- 9.97e-16]
+[95s]
